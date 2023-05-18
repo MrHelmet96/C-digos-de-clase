@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Landing Page de Tareas y Ejercicios</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .exercise {
+      display: none;
+    }
+    
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" data-exercise="exercise1">Ejercicio 1</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise2">Ejercicio 2</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise3">Ejercicio 3</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise4">Ejercicio 4</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise5">Ejercicio 5</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise6">Ejercicio 6</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise7">Ejercicio 7</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise8">Ejercicio 8</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise9">Ejercicio 9</a></li>
+        <li><a href="#" class="nav-link" data-exercise="exercise10">Ejercicio 10</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="content">
+    <div id="exercise1" class="exercise active">
+      <h2>Ejercicio 1</h2>
+      <p>Aquí va el contenido del ejercicio 1.</p>
+    </div>
+    <div id="exercise2" class="exercise">
+      <h2>Ejercicio 2</h2>
+      <p>Aquí va el contenido del ejercicio 2.</p>
+    </div>
+    <div id="exercise3" class="exercise">
+      <h2>Ejercicio 3</h2>
+      <p>Aquí va el contenido del ejercicio 3.</p>
+    </div>
+    <!-- Resto de ejercicios -->
+  </div>
+
+  <script>
+    // JavaScript
+    const navLinks = document.querySelectorAll('.nav-link');
+    const exercises = document.querySelectorAll('.exercise');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const exerciseId = link.getAttribute('data-exercise');
+        exercises.forEach(exercise => {
+          exercise.classList.remove('active');
+        });
+        document.getElementById(exerciseId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
