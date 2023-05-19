@@ -1,14 +1,9 @@
-// Consigna: Escribir un script que muestre la posición de la primera vocal de un texto introducido por teclado. Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1
+// function alReves(texto) {
+//     let invertido = texto.reverse();
 
-let inputTexto = prompt("Ingrese una palabra o mensaje a elección", "...");
+//     return invertido
+// }
 
-const vocales = ["a","e","i","o","u"];
-
-for (let i=0; i < inputTexto.length; i++) {
-
-    let primeraVocal = inputTexto[i].toLowerCase();
-
-    if (inputTexto.includes(primeraVocal)){
-        console.log(`su mensaje incluye una vocal ()`)
-    }
-}
+var texto = [".sever la atse otsE"]
+var invertido = texto[0].reverse();
+console.log(invertido);
