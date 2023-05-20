@@ -1,9 +1,8 @@
-// function alReves(texto) {
-//     let invertido = texto.reverse();
+//function alReves(texto) {
+    const invertido = Array.from(texto).reverse().join("");
+//    return invertido;
+//}
 
-//     return invertido
-// }
-
-var texto = [".sever la atse otsE"]
-var invertido = texto[0].reverse();
+var texto = ".sever la atse otsE";
+//var invertido = alReves(texto);
 console.log(invertido);
