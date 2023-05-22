@@ -1,19 +1,24 @@
 // Consigna: Crea una función que genere 100 números aleatorios entre 1 y 100 que no se repitan y luego imprima por pantalla usando document.write().
 
-function numerosAleatorios(min, max){
-    
-    numeroAlAzar = numerosAleatorios(1,100)
-    numeroRedondo = Math.round(numeroAlAzar);
+function numerosAleatorios(){
+    const numsGenerados = [];
 
-    for (let i=1; i <= 100; i++) {
+    for (let i=1; numsGenerados.length < 100; i++) {
+       let numero = Math.floor(Math.random() * 100) + 1;               
     
-        return Math.random() * (max - min) + min;        
-    
-        document.write(`número ${i}: ${numeroRedondo} <br/>`);       
-    
+       if(!numsGenerados.includes(numero)) {
+        numsGenerados.push(numero);
+       }
     }
     
+    numsGenerados.forEach(function(numero, indice) {
+        let posicion = indice + 1;
+        document.write(`Posición ${posicion}: ${numero}<br>`);
+    })
 }
+
+numerosAleatorios();
+
 
 
 
