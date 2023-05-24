@@ -5,45 +5,39 @@ var valores = [true, false, 2, "hola", "mundo", 3, "char"];
 // 2. Imprimir estos elementos de menor a mayor cantidad de letras.
 // 3. Determinar el resultado de las cuatro operaciones matemáticas básicas (suma, resta, multiplicación y división) realizadas con los dos elementos numéricos.
 
-let masLargo = "";
-let nuevoArreglo = [];
-let arregloNumeros = [];
+let masLargo = ""; // variable bandera que permite almacenar el string más largo    
+let nuevoArreglo = []; // un nuevo array vacio donde almacenar los elementos "String" del array "valores"
+let arregloNumeros = []; // un nuevo array vacio donde almacenar los elementos "number" del array "valores"
 
-
+// iniciamos un for que recorre todo el array "valores"
 for(let i=0; i < valores.length; i++){
     
-    if (typeof valores[i] == "string"){
+    if (typeof valores[i] == "string"){ //si el elemento en la posicion 'i' es un string:
         
-        if (valores[i].length > masLargo.length) {
-            masLargo = valores[i];
+        if (valores[i].length > masLargo.length) { //si el la longitud del elemento en la posicion 'i' es mayor a la longitud del elemento en la variable "masLargo":
+            masLargo = valores[i]; // la variable "masLargo" pasa a almacenar el elemento de valores en la posicion 'i'
         }
 
-        nuevoArreglo.push(valores[i]);
+        nuevoArreglo.push(valores[i]); // mueve los elementos de tipo string del arreglo "valores" al arreglo "nuevoArreglo"
     }
 
-    if (typeof valores[i] == "number"){
-        arregloNumeros.push(valores[i]);
+    if (typeof valores[i] == "number"){ //si el elemento en la posicion 'i' es de tipo number:
+        arregloNumeros.push(valores[i]); // mueve los elementos de tipo number del arreglo "valores" al arreglo "arregloNumeros"
     }
 
  }
-
- let suma = arregloNumeros[0];
- let resta = arregloNumeros[0];
- let multiplicacion = arregloNumeros[0];
- let division = arregloNumeros[0];
-
- nuevoArreglo.sort(function(a,b){
-    return a.length - b.length;
+// Se utiliza el método 'sort()' para reordenar el array 'nuevoArreglo' segun un criterio de comparación
+ nuevoArreglo.sort(function(a,b){ // se llama a una funcion de comparación que toma como parametros 'a' y 'b'
+    return a.length - b.length; // se establece como criterio de comparación la longitud de cada elemento
  });
 
- for (let i=0; i < arregloNumeros.length; i++){
-    numero = arregloNumeros[i];
-    
-    suma += numero;
-    resta -= numero;
-    multiplicacion *= numero;
-    division /= numero;
- }
+ let suma = arregloNumeros[0] + arregloNumeros[1];
+ let resta = arregloNumeros[0] - arregloNumeros[1];
+ let multiplicacion = arregloNumeros[0] * arregloNumeros[1];
+ let division = arregloNumeros[0] / arregloNumeros[1];
+
+
+
 
  console.log("La palabra más larga dentro del array es:", masLargo);
 
