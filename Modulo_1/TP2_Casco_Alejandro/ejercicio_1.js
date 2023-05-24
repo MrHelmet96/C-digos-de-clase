@@ -31,20 +31,20 @@ for(let i=0; i < valores.length; i++){
     return a.length - b.length; // se establece como criterio de comparación la longitud de cada elemento
  });
 
- let suma = arregloNumeros[0] + arregloNumeros[1];
- let resta = arregloNumeros[0] - arregloNumeros[1];
- let multiplicacion = arregloNumeros[0] * arregloNumeros[1];
- let division = arregloNumeros[0] / arregloNumeros[1];
+ let suma = arregloNumeros[0] + arregloNumeros[1]; //suma el elemento en la posición 0 y la posición 1 del arreglo "arregloNumeros"
+ let resta = arregloNumeros[0] - arregloNumeros[1]; //resta el elemento en la posición 0 y la posición 1 del arreglo "arregloNumeros"
+ let multiplicacion = arregloNumeros[0] * arregloNumeros[1]; //multiplica el elemento en la posición 0 y la posición 1 del arreglo "arregloNumeros"
+ let division = arregloNumeros[0] / arregloNumeros[1]; //divide el elemento en la posición 0 y la posición 1 del arreglo "arregloNumeros"
 
 
 
 
- console.log("La palabra más larga dentro del array es:", masLargo);
+ console.log("La palabra más larga dentro del array es:", masLargo); //muestra por consola cual es el valor más largo
 
- console.log("Los string de más corto a más largo: ", nuevoArreglo);
+ console.log("Los string de más corto a más largo: ", nuevoArreglo); // muestra por consola el array "nuevoArreglo" con sus elementos ordenados a más corto a más largo
 
- console.log(`la suma de los elementos es: ${suma}`)
- console.log(`la resta de los elementos es: ${resta}`)
- console.log(`la multiplicación de los elementos es: ${multiplicacion}`)
- console.log(`la division de los elementos es: ${division}`)
+ console.log(`la suma de los elementos es: ${suma}`) //Muestra por consola el resultado de la suma de los elemntos
+ console.log(`la resta de los elementos es: ${resta}`) //Muestra por consola el resultado de la resta de los elemntos
+ console.log(`la multiplicación de los elementos es: ${multiplicacion}`) //Muestra por consola el resultado de la de los elemntos
+ console.log(`la division de los elementos es: ${division}`) //Muestra por consola el resultado de la de los elemntos
  

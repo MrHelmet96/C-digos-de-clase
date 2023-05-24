@@ -16,4 +16,4 @@ function par_o_impar(num) {
     }
 }
 
-console.log(par_o_impar(inputNumero));
+console.log(par_o_impar(inputNumero)); //llama a la funcion 'par_o_impar' e imprime lo que este devuelve por consola.

@@ -11,7 +11,7 @@ function calcularFactorial (numero){
     let factorial = 1; // Se define factorial como 1 para comenzar la multiplicación
     
     for (let i=1; i <= numero; i++){ //for para recorrer el array. dicha cantidad está determinada por el número que ingresó el usuario
-    factorial *= i
+    factorial *= i // factorial = (es igual) al valor dentro de 'factorial' multiplicado por el valor de 'i'.
     }
     return factorial //devuelve el resultado de la variable "factorial" al final del recorrido
 }
