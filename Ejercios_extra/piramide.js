@@ -7,9 +7,10 @@
 
 for (let i = 1; i <= 20; i++) {
     let linea = "";
+    document.write("</br>")
     for (let j = 0; j < i; j++) {
       linea += i;
     }
-    console.log(linea);
+    document.write(linea);
   }
   
