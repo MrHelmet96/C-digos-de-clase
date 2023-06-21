@@ -17,14 +17,14 @@ while(true) { // Se inicia un bucle while(true) que se ejecutará indefinidament
     }
     calificaciones.push(nota); // Si la nota es válida, se agrega al array calificaciones utilizando push()
 }
-// Se inicializan las variables 'contador' y 'suma_de_notas' con valor 0.
+// Se inicializan las variables 'contador' y 'suma_de_notas' con valor 0
 contador = 0;
 suma_de_notas = 0;
 for (nota of calificaciones) { // Se utiliza un bucle for...of para iterar sobre cada elemento nota en el array calificaciones
     suma_de_notas = suma_de_notas + nota; //En cada iteración, se suma la nota a la variable suma_de_notas
     contador = contador + 1; // se incrementa el contador en 1
 }
-promedio = suma_de_notas / contador; //Se calcula el promedio dividiendo la suma de las notas entre la cantidad de notas, y se almacena en la variable promedio.
+promedio = suma_de_notas / contador; //Se calcula el promedio dividiendo la suma de las notas entre la cantidad de notas, y se almacena en la variable promedio
 
  //Se evalúa el promedio para determinar la condición del alumno.
 if (promedio < 6 ){
