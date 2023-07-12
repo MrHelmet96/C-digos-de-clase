@@ -3,7 +3,7 @@
 let vocales = ['a','e','i','o','u']
 
 //solución "simple"
-for (vocal of vocales){
+for (let vocal of vocales){
     document.write(` ${vocal} <br/>`);
 }
 document.write("<br/>");
