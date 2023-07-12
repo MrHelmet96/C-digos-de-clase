@@ -5,10 +5,12 @@ let dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Do
 
 // Solución "Simple"
 for (dia of dias) {
-    console.log(dia);
+    console.log(dia); // por consola
+    document.write(dia + "<br/>"); //por pantalla
 }
-
+document.write("<br/>");
 // Solción "Comppleja"
 for (let i = 0; i < dias.length; i++){
-    console.log(`el día n° ${i + 1} es el ${dias[i]}.`)
+    console.log(`el día n° ${i + 1} es el ${dias[i]}.`); // por consola
+    document.write(`el día n° ${i + 1} es el ${dias[i]}. <br/>`); //por pantalla
 }
